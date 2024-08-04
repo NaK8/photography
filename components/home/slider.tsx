@@ -26,7 +26,7 @@ const responsive = {
 
 export default function Slider() {
   return (
-    <section className="h-[500px]">
+    <section className="h-[350px] md:h-[500px]">
       <Carousel
         responsive={responsive}
         swipeable={false}
