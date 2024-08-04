@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Slider />
       <HelloThere />
-      <BackgroundImage url="/home-bg.jpg" />
+      <BackgroundImage url="/home-bg.webp" />
       <HomeCards />
       <HomeGradient />
       <HomeContact />

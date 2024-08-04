@@ -17,7 +17,6 @@ export default function Counter({ Start, Max }: CounterProps) {
       } else {
         clearInterval(intervalId);
       }
-      console.log("interval");
     }, 80);
 
     return () => clearInterval(intervalId);
