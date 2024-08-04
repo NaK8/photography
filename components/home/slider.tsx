@@ -26,7 +26,7 @@ const responsive = {
 
 export default function Slider() {
   return (
-    <div>
+    <section className="h-[500px]">
       <Carousel
         responsive={responsive}
         swipeable={false}
@@ -43,6 +43,6 @@ export default function Slider() {
         <Slide url="/slider-2.webp" heading="latest technologies" />
         <Slide url="/slider-3.webp" heading="impressive works" />
       </Carousel>
-    </div>
+    </section>
   );
 }
