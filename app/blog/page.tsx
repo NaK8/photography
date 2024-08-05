@@ -1,5 +1,10 @@
+import Blogs from "@/components/blog/blogs";
 import React from "react";
 
 export default function Blog() {
-  return <div>Blog</div>;
+  return (
+    <>
+      <Blogs />
+    </>
+  );
 }

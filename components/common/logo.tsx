@@ -12,7 +12,7 @@ export default function Logo() {
         height={44}
         priority
       />
-      <h1 className="text-2xl uppercase">Photography</h1>
+      <h1 className="text-xl uppercase md:text-2xl">Photography</h1>
     </Link>
   );
 }

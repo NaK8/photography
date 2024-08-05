@@ -5,10 +5,10 @@ import React from "react";
 export default function HelloThere() {
   return (
     <section className="container py-8 text-center font-sans">
-      <h3 className="text-5xl">{helloThere.MainHeading}</h3>
+      <h3 className="text-3xl md:text-5xl">{helloThere.MainHeading}</h3>
       <p className="text-sm text-gray-400">{helloThere.MiniPara}</p>
       <Image
-        className="mx-auto py-8"
+        className="mx-auto w-1/2 py-8 md:w-[395px]"
         src={helloThere.ImgUrl}
         alt={helloThere.AltTag}
         width={395}
