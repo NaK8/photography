@@ -5,7 +5,7 @@ import HomeCards from "@/components/home/home-cards";
 import HomeContact from "@/components/home/home-contact";
 import HomeGradient from "@/components/home/home-gradient";
 import Slider from "@/components/home/slider";
-import React, { Suspense } from "react";
+import React from "react";
 
 export default function Home() {
   return (
@@ -17,9 +17,7 @@ export default function Home() {
       <HomeGradient />
       <HomeContact />
       <BackgroundImage url="/boxer-bg.webp" />
-      <Suspense>
-        <HtmlMap />
-      </Suspense>
+      <HtmlMap />
     </>
   );
 }
