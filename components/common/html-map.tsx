@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { Map } from "@vis.gl/react-maplibre";
-import "maplibre-gl/dist/maplibre-gl.css"; // See notes below
+import "maplibre-gl/dist/maplibre-gl.css";
 
 export default function HtmlMap() {
   return (
