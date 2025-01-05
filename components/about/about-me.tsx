@@ -9,6 +9,7 @@ export default function AboutMe() {
       <Image
         src="/about-img.jpg"
         alt="about me"
+        fetchPriority="high"
         width={400}
         height={400}
         className="mx-auto size-[350px] rounded-full object-cover md:mx-1 md:size-[400px]"
