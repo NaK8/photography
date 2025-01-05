@@ -3,7 +3,9 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Slide from "@/components/home/slide";
+import dynamic from "next/dynamic";
+
+const Slide = dynamic(() => import("@/components/home/slide"));
 
 const responsive = {
   superLargeDesktop: {

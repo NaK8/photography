@@ -1,7 +1,9 @@
 import React from "react";
 import BackgroundImage from "@/components/common/background-image";
-import CounterBox from "@/components/home/counter-box";
 import { homeCounter } from "@/data/home-data";
+import dynamic from "next/dynamic";
+
+const CounterBox = dynamic(() => import("./counter-box"));
 
 export default function HomeGradient() {
   return (
