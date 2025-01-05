@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import dynamic from "next/dynamic";
@@ -27,8 +27,9 @@ const responsive = {
 };
 
 export default function Slider() {
+  const [click, setClick] = useState(false);
   return (
-    <section className="h-[350px] md:h-[500px]">
+    <section onClick={() => setClick(true)} className="h-[350px] md:h-[500px]">
       <Carousel
         responsive={responsive}
         swipeable={false}
@@ -42,8 +43,8 @@ export default function Slider() {
         containerClass="carousel-container"
       >
         <Slide url="/slider-1.webp" heading="artistic eye" />
-        <Slide url="/slider-2.webp" heading="latest technologies" />
-        <Slide url="/slider-3.webp" heading="impressive works" />
+        {click && <Slide url="/slider-2.webp" heading="latest technologies" />}
+        {click && <Slide url="/slider-3.webp" heading="impressive works" />}
       </Carousel>
     </section>
   );
