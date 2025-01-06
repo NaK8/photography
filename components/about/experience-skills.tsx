@@ -1,6 +1,8 @@
 import { experienceSkills, skillPercentage } from "@/data/about-data";
 import React from "react";
-import CircleMeter from "./circle-meter";
+import dynamic from "next/dynamic";
+
+const CircleMeter = dynamic(() => import("./circle-meter"));
 
 export default function ExperienceSkills() {
   return (
