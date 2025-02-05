@@ -1,3 +1,5 @@
+"use cache";
+
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -21,7 +23,7 @@ export const metadata: Metadata = {
   description: "Created by using Next 15 react 19 and react-compiler",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

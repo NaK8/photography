@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
     reactCompiler: true,
     optimizePackageImports: ["lucide-react", "react-multi-carousel"],
     ppr: "incremental",
+    useCache: true,
   },
 };
 
